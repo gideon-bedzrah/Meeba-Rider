@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "57102100480",
+    "project_id": "meeba-322018",
+    "storage_bucket": "meeba-322018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57102100480:android:f54885ec60248ce757d0e5",
+        "android_client_info": {
+          "package_name": "com.berthstudios.meeba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57102100480-ohretatg4h9bhja7gm7phbrea8s3cmmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBExsfWC2PbDlnm5Q0bVkU9Ej3nBiRi9Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57102100480-ohretatg4h9bhja7gm7phbrea8s3cmmh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "57102100480-r5mu414mqmamp2l50h1ktk5555f2u88o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.berthstudios.Meeba"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57102100480:android:038471537f02cba157d0e5",
+        "android_client_info": {
+          "package_name": "com.berthstudios.meebarider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57102100480-ohretatg4h9bhja7gm7phbrea8s3cmmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBExsfWC2PbDlnm5Q0bVkU9Ej3nBiRi9Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57102100480-ohretatg4h9bhja7gm7phbrea8s3cmmh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "57102100480-r5mu414mqmamp2l50h1ktk5555f2u88o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.berthstudios.Meeba"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

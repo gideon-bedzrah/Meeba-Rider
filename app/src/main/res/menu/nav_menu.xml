@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_requests" android:title="Requests" android:icon="@drawable/package_open_24x24__1x"/>
+    <item android:id="@+id/item_profile" android:title="Profile" android:icon="@drawable/scooter_8_24x24__1x"/>
+</menu>

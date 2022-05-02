@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RequestsFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_welcome_meeba_rider"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:textColor="?attr/label_color"
+                android:layout_height="wrap_content"
+                android:text="Welcome Meeba Rider"/>
+
+            <TextView
+                android:id="@+id/text_view_find_all"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_welcome_meeba_rider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find all pending trips below"/>
+
+            <SearchView
+                android:id="@+id/search_view"
+                style="@style/Widget.AppCompat.Light.SearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search Requests"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/card_view_notification"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/meeba_green"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/text_view_accepted_requests"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="You have accepted 2 requests"/>
+
+        <ImageButton
+            android:id="@+id/image_button_go_to_requests"
+            android:foregroundGravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_requests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/layout_request_item"
+            tools:itemCount="5"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/linear_no_requests"
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/people_reading_newspaper_1x"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Pending requests"/>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

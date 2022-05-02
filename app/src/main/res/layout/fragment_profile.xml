@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="?attr/background_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/text_view_fullname"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="?attr/label_color"
+                android:layout_height="wrap_content"
+                tools:text="Gideon Bedzrah"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text_view_fullname"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/text_view_email"
+                android:layout_width="wrap_content"
+                android:textColor="?attr/label_color"
+                android:layout_height="wrap_content"
+                tools:text="gbedzrah1@gmail.com"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text_view_email"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/text_view_phone"
+                android:layout_width="wrap_content"
+                android:textColor="?attr/label_color"
+                android:layout_height="wrap_content"
+                tools:text="0557587124"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_sign_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/label_color"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_email"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="?attr/label_color"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textColor="?attr/label_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trips"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_email"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="?attr/label_color"
+                        android:id="@+id/text_view_amount"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textColor="?attr/label_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_email"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_view_total_requests"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textColor="?attr/label_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requests"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/background_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_rider_trips"
+            tools:listitem="@layout/item_trips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
